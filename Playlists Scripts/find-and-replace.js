@@ -97,17 +97,17 @@ fs.readFile(YTM, 'utf8', (err, data) => {
             highlightedLine = highlightedLine.replace(FS, c.bold.brightYellow(FS));
             console.error(highlightedLine);
             console.log('');
-            console.info(c.bold.brightBlue(`ℹ Now executing replacing and duplicating functions`));
+            console.info(c.bold.brightCyan(`ℹ Now executing replacing and duplicating functions`));
             replace(YTM, YTM, BTP, () => {
-                console.log(c.bold.brightGreen(`✅ Successfully replaced any ${BTP.find} to ${BTP.replace} in ${YTM}`));
+                console.log(c.bold.brightCyan(`✅ Successfully replaced any ${BTP.find} to ${BTP.replace} in ${YTM}`));
                 replace(YTM, YTM, WTM, () => {
-                    console.log(c.bold.brightGreen(`✅ Successfully replaced any ${WTM.find} to ${WTM.replace} in ${YTM}`));
+                    console.log(c.bold.brightCyan(`✅ Successfully replaced any ${WTM.find} to ${WTM.replace} in ${YTM}`));
                     replace(YTM, YTM, STN, () => {
-                        console.log(c.bold.brightGreen(`✅ Successfully replaced any ${STN.find} to ${STN.replace} in ${YTM}`));
+                        console.log(c.bold.brightCyan(`✅ Successfully replaced any ${STN.find} to ${STN.replace} in ${YTM}`));
                         duplicate(YTM, YT, () => {
-                            console.log(c.bold.brightGreen(`✅ Successfully duplicated ${YTM} to ${YT}`));
+                            console.log(c.bold.brightCyan(`✅ Successfully duplicated ${YTM} to ${YT}`));
                             replace(YT, YT, MTW, () => {
-                                console.log(c.bold.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
+                                console.log(c.bold.brightCyan(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
                             });
                         });
                     });
