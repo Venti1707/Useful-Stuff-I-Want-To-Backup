@@ -15,7 +15,6 @@ esbenp.prettier-vscode
 espresso3389.unicode-normalizer
 ethansk.restore-terminals
 evondev.indent-rainbow-palettes
-extensions.json
 fabiospampinato.vscode-terminals
 formulahendry.auto-rename-tag
 github.vscode-pull-request-github
