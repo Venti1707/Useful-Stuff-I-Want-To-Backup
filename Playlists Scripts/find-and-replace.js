@@ -97,7 +97,6 @@ fs.readFile(YTM, 'utf8', (err, data) => {
             highlightedLine = highlightedLine.replace(FS, c.bold.brightYellow(FS));
             console.error(highlightedLine);
             console.log('');
-            console.info(c.brightCyan(`ℹ Now executing replacing and duplicating functions`));
             found = true;
         }
     });
@@ -112,6 +111,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
             });
         });
     } else {
+        console.info(c.brightCyan(`ℹ Now executing replacing and duplicating functions`));
         console.info(c.brightGreen(`✅ Successfully replaced any ${BTP.find} to ${BTP.replace} in ${YTM}`));
         replace(YTM, YTM, BTP, () => {
             console.info(c.brightGreen(`✅ Successfully replaced any ${WTM.find} to ${WTM.replace} in ${YTM}`));
