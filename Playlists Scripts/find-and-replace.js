@@ -57,7 +57,7 @@ const YT = 'Music/YouTube.txt';
 // Unwanted strings
 const BROWSE = 'browse/VL';
 const WWW = 'www.youtube.com';
-const FS = '&feature=shared'
+const FS = '&feature=shared';
 
 // Find & replace objects
 const STN = {
