@@ -102,18 +102,18 @@ fs.readFile(YTM, 'utf8', (err, data) => {
     });
 
     if (!found) {
-        console.info(c.brightCyan(`ℹ No unwanted strings found in ${YTM}, duplicating contents to ${YT}`));
+        console.info(c.bold.brightCyan(`ℹ No unwanted strings found in ${YTM}, duplicating contents to ${YT}`));
         duplicate(YTM, YT, () => {
             console.log('');
-            console.log(c.brightCyan(`ℹ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
+            console.log(c.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
             replace(YT, YT, MTW, () => {
                 console.log('');
-                console.log(c.brightCyan(`ℹ Process complete`));
+                console.log(c.bold.brightCyan(`ℹ Process complete`));
                 console.timeEnd(c.brightMagenta('Time taken'));
             });
         });
     } else {
-        console.info(c.brightCyan(`ℹ Now executing replacing and duplicating functions`));
+        console.info(c.bold.brightCyan(`ℹ Now executing replacing and duplicating functions`));
         console.info(c.brightGreen(`✅ Successfully replaced any ${BTP.find} to ${BTP.replace} in ${YTM}`));
         replace(YTM, YTM, BTP, () => {
             console.info(c.brightGreen(`✅ Successfully replaced any ${WTM.find} to ${WTM.replace} in ${YTM}`));
@@ -125,7 +125,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
                         console.info(c.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
                         replace(YT, YT, MTW, () => {
                             console.log('');
-                            console.log(c.brightCyan(`ℹ Process complete`));
+                            console.log(c.bold.brightCyan(`ℹ Process complete`));
                             console.timeEnd(c.brightMagenta('Time taken'));
                         });
                     });
