@@ -104,7 +104,6 @@ fs.readFile(YTM, 'utf8', (err, data) => {
     if (!found) {
         console.info(c.bold.brightCyan(`ℹ No unwanted strings found in ${YTM}, duplicating contents to ${YT}`));
         duplicate(YTM, YT, () => {
-            console.log('');
             console.log(c.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
             replace(YT, YT, MTW, () => {
                 console.log('');
