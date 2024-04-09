@@ -1,7 +1,10 @@
 // npm packages
 const fs = require('fs');
 const c = require('colors');
+
 console.time(c.brightMagenta('Time taken'));
+
+var usc = 0; // Unwanted string count
 
 // Replace function
 function replace(inputFile, outputFile, replacements, callback) {
@@ -98,6 +101,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
             console.error(highlightedLine);
             console.log('');
             found = true;
+            usc++;
         }
     });
 
@@ -107,7 +111,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
             console.log(c.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
             replace(YT, YT, MTW, () => {
                 console.log('');
-                console.log(c.bold.brightCyan(`ℹ Process complete`));
+                console.info(c.bold.brightCyan(`ℹ Process complete`));
                 console.timeEnd(c.brightMagenta('Time taken'));
             });
         });
@@ -124,7 +128,8 @@ fs.readFile(YTM, 'utf8', (err, data) => {
                         console.info(c.brightGreen(`✅ Successfully replaced any ${MTW.find} to ${MTW.replace} in ${YT}`));
                         replace(YT, YT, MTW, () => {
                             console.log('');
-                            console.log(c.bold.brightCyan(`ℹ Process complete`));
+                            console.info(c.bold.brightCyan(`ℹ Process complete`));
+                            console.info(c.bold.brightCyan(`ℹ Number of unwanted strings found: ${usc}`));
                             console.timeEnd(c.brightMagenta('Time taken'));
                         });
                     });
