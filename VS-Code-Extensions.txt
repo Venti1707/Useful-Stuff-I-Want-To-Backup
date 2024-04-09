@@ -26,7 +26,9 @@ jianbingfang.dupchecker
 jzmstrjp.color-the-tag-name
 kamikillerto.vscode-colorize
 leonardssh.vscord
+loyieking.smalise
 medo64.code-point
+medo64.render-crlf
 mhutchie.git-graph
 mnxn.jvm-bytecode-viewer
 ms-vscode.hexeditor
@@ -44,9 +46,11 @@ rowewilsonfrederiskholme.wikitext
 shd101wyy.markdown-preview-enhanced
 smartmonkey.geotools
 softwaredotcom.swdc-vscode
+sohamkamani.code-eol
 streetsidesoftware.code-spell-checker
 stxr.iconfont-preview
 sukumo28.wav-preview
+surendrajat.apklab
 tomoki1207.pdf
 tonybaloney.vscode-pets
 tyriar.luna-paint
