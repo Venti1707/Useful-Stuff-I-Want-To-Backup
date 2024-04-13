@@ -1,5 +1,5 @@
 javascript: (() => {
-    if (window.location.href.includes("https://geohack.toolforge.org/geohack.php?pagename=")) {
+    if (window.location.href.includes("https://geohack.toolforge.org/geohack.php")) {
         alert("Click anywhere in the page to copy the coordinates");
         document.addEventListener("click", function () {
             var latitudeElement = document.querySelector(".latitude");
