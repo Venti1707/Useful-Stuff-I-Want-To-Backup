@@ -10,6 +10,7 @@ brunnerh.insert-unicode
 chrmarti.regex
 dbaeumer.vscode-eslint
 dotjoshjohnson.xml
+eamodio.gitlens
 ecmel.vscode-html-css
 esbenp.prettier-vscode
 espresso3389.unicode-normalizer
@@ -21,7 +22,6 @@ github.vscode-pull-request-github
 gurumukhi.selected-lines-count
 jannisx11.batch-rename-extension
 jbockle.jbockle-format-files
-jeff-hykin.code-eol
 jianbingfang.dupchecker
 jzmstrjp.color-the-tag-name
 kamikillerto.vscode-colorize
@@ -31,6 +31,14 @@ medo64.code-point
 medo64.render-crlf
 mhutchie.git-graph
 mnxn.jvm-bytecode-viewer
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.hexeditor
 mutantdino.resourcemonitor
 neptunedesign.vs-sequential-number
