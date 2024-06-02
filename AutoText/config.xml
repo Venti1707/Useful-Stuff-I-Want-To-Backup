@@ -74,7 +74,7 @@
     <folder name="RegEx" />
   </folder>
   <folder name="Music">
-    <keyword value="ycp" type="1" rich="0">Frédéric Chopin - Preludes</keyword>
+    <keyword value="ycp" type="1" rich="0">Frédéric Chopin - Nocturnes</keyword>
     <folder name="Parts">
       <keyword value="p1" type="1" rich="0">Piano - </keyword>
       <keyword value="p2" type="1" rich="0">Conductor - </keyword>
