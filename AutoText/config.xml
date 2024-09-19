@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <AutoType>
-  <folder name="Thanks">
+  <!-- <folder name="Thanks">
     <keyword value="tcontact" type="1">Thank you very much for contacting us.</keyword>
     <keyword value="tcoop" type="1">Thank you very much for your cooperation.</keyword>
     <keyword value="temail" type="1">Thank you for the e-mail.</keyword>
@@ -63,8 +63,8 @@
   <folder name="HTML Tags">
     <keyword value="div" type="1">&lt;div&gt;%|&lt;/div&gt;</keyword>
     <keyword value="span" type="1">&lt;span&gt;%|&lt;/span&gt;</keyword>
-  </folder>
-  <folder name="Programming">
+  </folder> -->
+  <folder name="">
     <folder name="Side Projects">
       <folder name="Project Railways">
         <keyword value="eav" type="1" rich="0">// javascript: (() =&gt; {{#crlf#}    if (window.location.href.includes("https://geohack.toolforge.org/geohack.php?pagename=")) {{#crlf#}        console.log("Click anywhere in the page to copy the coordinates &amp; location");{#crlf#}        document.addEventListener("click", function () {{#crlf#}            var locationElement = document.getElementById("firstHeading");{#crlf#}            var latitudeElement = document.querySelector(".latitude");{#crlf#}            var longitudeElement = document.querySelector(".longitude");{#crlf#}            if (latitudeElement &amp;&amp; longitudeElement &amp;&amp; locationElement) {{#crlf#}                var location = locationElement.textContent.split("GeoHack - ")[1];{#crlf#}                var latitude = latitudeElement.textContent;{#crlf#}                var longitude = longitudeElement.textContent;{#crlf#}                var lineBreak = "\n";{#crlf#}                var toCopy = latitude + ", " + longitude + ", " + location + lineBreak;{#crlf#}                navigator.clipboard.writeText(toCopy).then(() =&gt; {{#crlf#}                    console.log("Coordinates &amp; location copied successfully");{#crlf#}                }).catch(err =&gt; {{#crlf#}                    console.error("Could not copy text: ", err);{#crlf#}                }){#crlf#}            } else {{#crlf#}                console.error("Location, latitude, longitude element(s) not found.");{#crlf#}            }{#crlf#}        }){#crlf#}    } else {{#crlf#}        console.error("Not on a GeoHack page");{#crlf#}    }{#crlf#}// })();</keyword>
@@ -83,13 +83,16 @@
     <keyword value="etup" type="1" rich="0">// javascript: (() =&gt; {{#crlf#}    if (window.location.href.includes("https://music.youtube.com/playlist?list=PL") || window.location.href.includes("browse/VL")) {{#crlf#}        console.log("Click anywhere in the page to copy the title, performer(s) &amp; URL ");{#crlf#}        document.addEventListener("click ", function () {{#crlf#}            var titleElement = document.querySelector(".title.style - scope.ytmusic - detail - header - renderer ");{#crlf#}            var performersElement = document.querySelector(".description.style - scope.ytmusic - detail - header - renderer ");{#crlf#}            var url = window.location.href.replace("browse/VL", "playlist?list=");{#crlf#}            if (titleElement) {{#crlf#}                var title = titleElement.textContent; var lineBreak = "\n";{#crlf#}                var performers = performersElement ? performersElement.textContent.replace(/\n/g, " | ") : "";{#crlf#}                var toCopy = title + (performers ? " (" + performers + ")" : "") + lineBreak + url + lineBreak + lineBreak;{#crlf#}                navigator.clipboard.writeText(toCopy).then(() =&gt; {{#crlf#}                    console.log("Title, performer(s) &amp; URL copied successfully");{#crlf#}                }).catch(err =&gt; {{#crlf#}                    console.warn("Could not copy text: ", err);{#crlf#}                });{#crlf#}            } else {{#crlf#}                console.error("Title, performer(s) &amp; URL not found.");{#crlf#}            }{#crlf#}        });{#crlf#}    } else if (window.location.href.includes("https://music.youtube.com/playlist?list=OL")) {{#crlf#}        console.error("In a YouTube Music album, not a playlist");{#crlf#}    } else {{#crlf#}        console.error("Not in a YouTube Music playlist");{#crlf#}    }{#crlf#}// })();</keyword>
     <keyword value="uynym" type="1" rich="0">Update YouTube.txt &amp; YouTubeMusic.txt</keyword>
     <keyword value="myt" type="1" rich="0">https://music.youtube.com/watch?v=</keyword>
+    <keyword value="amc" type="1" rich="0">Apple Music imagesize:1200x1200 </keyword>
   </folder>
   <folder name="Others">
     <keyword value="shrug" type="1" rich="0">¯\_(ツ)_/¯</keyword>
-    <folder name="Pokecord">
+    <!-- <folder name="Pokecord">
       <keyword value="pkc" type="1" rich="0">@Pokecord#4908 catch </keyword>
       <keyword value="pkp" type="1" rich="0">@Pokecord#4908 pokedex </keyword>
       <keyword value="pkra" type="1" rich="0">@Pokecord#4908 rewards all</keyword>
-    </folder>
+    </folder> -->
+    <keyword value="yd" type="1" rich="0">yt-dlp </keyword>
+    <keyword value="tuv" type="1" rich="0">https://tinyurl.com/v1707</keyword>
   </folder>
 </AutoType>
