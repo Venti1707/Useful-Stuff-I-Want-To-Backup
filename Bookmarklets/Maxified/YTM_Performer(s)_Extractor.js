@@ -1,8 +1,8 @@
 javascript: (() => {
     if (window.location.href.includes("https://music.youtube.com/playlist?list=PL") || window.location.href.includes("browse/VL")) {
-        alert("Click anywhere in the page to copy the performer(s)");
+        alert("Click anywhere in the page to copy the title, performer(s) & URL");
         document.addEventListener("click", function () {
-            var performersElement = document.querySelector(".description.style-scope.ytmusic-detail-header-renderer");
+            var performersElement = document.querySelector("yt-formatted-string.description.style-scope.ytmusic-description-shelf-renderer");
             if (performersElement) {
                 var performers = performersElement.textContent.replace(/\n/g, " | ");
                 navigator.clipboard.writeText(performers)
