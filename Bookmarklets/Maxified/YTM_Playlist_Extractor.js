@@ -1,20 +1,23 @@
 javascript: (() => {
     if (window.location.href.includes("https://music.youtube.com/playlist?list=PL") || window.location.href.includes("browse/VL")) {
-        alert("Click anywhere in the page to copy the performer(s)");
+        alert("Click anywhere in the page to copy the title, performer(s) & URL");
         document.addEventListener("click", function () {
-            var performersElement = document.querySelector(".description.style-scope.ytmusic-detail-header-renderer");
-            if (performersElement) {
+            var performersElement = document.querySelector("yt-formatted-string.description.style-scope.ytmusic-description-shelf-renderer");
+            var titleElement = document.querySelector("yt-formatted-string.title.style-scope.ytmusic-responsive-header-renderer");
+            if (performersElement || titleElement) {
                 var performers = performersElement.textContent.replace(/\n/g, " | ");
-                navigator.clipboard.writeText(performers)
+                var title = titleElement.textContent;
+                var url = window.location.href;
+                navigator.clipboard.writeText(title + " (" + performers + ")\n" + url)
                     .then(() => {
-                        alert("Performer(s) copied successfully");
+                        alert("Performer(s), title & URL copied successfully");
                         window.location.reload();
                     })
                     .catch(err => {
-                        alert("Could not copy performer(s): " + err);
+                        alert("Could not copy performer(s), title & URL: " + err);
                     });
             } else {
-                alert("Performer(s) not found.");
+                alert("Performer(s), title & URL and/or title not found.");
             }
         });
     } else if (window.location.href.includes("https://music.youtube.com/playlist?list=OL")) {
