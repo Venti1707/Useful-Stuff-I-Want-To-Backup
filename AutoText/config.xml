@@ -64,16 +64,19 @@
     <keyword value="div" type="1">&lt;div&gt;%|&lt;/div&gt;</keyword>
     <keyword value="span" type="1">&lt;span&gt;%|&lt;/span&gt;</keyword>
   </folder> -->
-  <folder name="">
+  <folder name="Projects">
     <folder name="Side Projects">
       <folder name="Project Railways">
         <keyword value="eav" type="1" rich="0">// javascript: (() =&gt; {{#crlf#}    if (window.location.href.includes("https://geohack.toolforge.org/geohack.php?pagename=")) {{#crlf#}        console.log("Click anywhere in the page to copy the coordinates &amp; location");{#crlf#}        document.addEventListener("click", function () {{#crlf#}            var locationElement = document.getElementById("firstHeading");{#crlf#}            var latitudeElement = document.querySelector(".latitude");{#crlf#}            var longitudeElement = document.querySelector(".longitude");{#crlf#}            if (latitudeElement &amp;&amp; longitudeElement &amp;&amp; locationElement) {{#crlf#}                var location = locationElement.textContent.split("GeoHack - ")[1];{#crlf#}                var latitude = latitudeElement.textContent;{#crlf#}                var longitude = longitudeElement.textContent;{#crlf#}                var lineBreak = "\n";{#crlf#}                var toCopy = latitude + ", " + longitude + ", " + location + lineBreak;{#crlf#}                navigator.clipboard.writeText(toCopy).then(() =&gt; {{#crlf#}                    console.log("Coordinates &amp; location copied successfully");{#crlf#}                }).catch(err =&gt; {{#crlf#}                    console.error("Could not copy text: ", err);{#crlf#}                }){#crlf#}            } else {{#crlf#}                console.error("Location, latitude, longitude element(s) not found.");{#crlf#}            }{#crlf#}        }){#crlf#}    } else {{#crlf#}        console.error("Not on a GeoHack page");{#crlf#}    }{#crlf#}// })();</keyword>
         <keyword value="ecv" type="1" rich="0">// javascript: (() =&gt; {{#crlf#}    if (window.location.href.includes("https://geohack.toolforge.org/geohack.php?pagename=")) {{#crlf#}        console.log("Click anywhere in the page to copy the coordinates");{#crlf#}        document.addEventListener("click", function () {{#crlf#}            var locationElement = document.getElementById("firstHeading");{#crlf#}            var latitudeElement = document.querySelector(".latitude");{#crlf#}            // var longitudeElement = document.querySelector(".longitude");{#crlf#}            if (latitudeElement &amp;&amp; longitudeElement /* &amp;&amp; locationElement */ ) {{#crlf#}                // var location = locationElement.textContent.split("GeoHack - ")[1];{#crlf#}                var latitude = latitudeElement.textContent;{#crlf#}                var longitude = longitudeElement.textContent;{#crlf#}                var lineBreak = "\n";{#crlf#}                var toCopy = latitude + ", " + longitude /* + ", " + location */ + lineBreak;{#crlf#}                navigator.clipboard.writeText(toCopy).then(() =&gt; {{#crlf#}                    console.log("Coordinates copied successfully");{#crlf#}                }).catch(err =&gt; {{#crlf#}                    console.error("Could not copy text: ", err);{#crlf#}                }){#crlf#}            } else {{#crlf#}                console.error("Latitude, longitude element(s) not found.");{#crlf#}            }{#crlf#}        }){#crlf#}    } else {{#crlf#}        console.error("Not on a GeoHack page");{#crlf#}    }{#crlf#}// })();</keyword>
       </folder>
+      <folder name="Project Reroute">
+        <keyword value="mratv" type="1" rich="0">More routes at: https://tinyurl.com/v1707</keyword>
+      </folder>
     </folder>
     <folder name="RegEx" />
   </folder>
-  <folder name="Music">
+  <folder name="">
     <keyword value="ycp" type="1" rich="0">Frédéric Chopin - Nocturnes</keyword>
     <folder name="Parts">
       <keyword value="p1" type="1" rich="0">Piano - </keyword>
@@ -94,5 +97,7 @@
     </folder> -->
     <keyword value="yd" type="1" rich="0">yt-dlp </keyword>
     <keyword value="tuv" type="1" rich="0">https://tinyurl.com/v1707</keyword>
+    <keyword value="ptc" type="1" rich="0">@Pokétwo#8236 catch </keyword>
+    <keyword value="v1707" type="1" rich="0">Venti1707</keyword>
   </folder>
 </AutoType>
