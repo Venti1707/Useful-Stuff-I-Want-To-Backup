@@ -73,11 +73,14 @@
       <folder name="Project Reroute">
         <keyword value="mratv" type="1" rich="0">More routes at: https://tinyurl.com/v1707</keyword>
       </folder>
+      <folder name="Project PokeLids">
+        <keyword value="img" type="1" rich="0">../../Images/%|.png</keyword>
+      </folder>
     </folder>
     <folder name="RegEx" />
   </folder>
   <folder name="">
-    <keyword value="ycp" type="1" rich="0">Frédéric Chopin - Nocturnes</keyword>
+    <keyword value="ycp" type="1" rich="0">Carl Maria von Weber - Piano Sonatas</keyword>
     <folder name="Parts">
       <keyword value="p1" type="1" rich="0">Piano - </keyword>
       <keyword value="p2" type="1" rich="0">Conductor - </keyword>
@@ -99,5 +102,6 @@
     <keyword value="tuv" type="1" rich="0">https://tinyurl.com/v1707</keyword>
     <keyword value="ptc" type="1" rich="0">@Pokétwo#8236 catch </keyword>
     <keyword value="v1707" type="1" rich="0">Venti1707</keyword>
+    <keyword value="ptcgapik" type="1" rich="0">f8dbab17-6ab0-47fe-aa8b-ca490d6c9172</keyword>
   </folder>
 </AutoType>
