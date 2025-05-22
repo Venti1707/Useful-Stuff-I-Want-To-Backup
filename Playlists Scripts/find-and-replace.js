@@ -8,7 +8,6 @@ var usc = 0; // Unwanted string count
 
 // Replace function
 function replace(inputFile, outputFile, replacements, callback) {
-
     fs.readFile(inputFile, 'utf8', (err, data) => {
         if (err) {
             console.error(c.bold.brightRed(`⚠ Error reading ${inputFile}:`), err);
@@ -54,8 +53,8 @@ function duplicate(sourceFile, destinationFile, callback) {
 }
 
 // File paths
-const YTM = 'Music/YouTubeMusic.txt';
-const YT = 'Music/YouTube.txt';
+const YTM = 'Classical/YouTubeMusic.txt';
+const YT = 'Classical/YouTube.txt';
 
 // Unwanted strings
 const BROWSE = 'browse/VL';
@@ -94,7 +93,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
 
     lines.forEach((line, lineNumber) => {
         if (line.includes(BROWSE) || line.includes(WWW) || line.includes(FS)) {
-            console.error(c.bold.brightRed(`⚠ Unwanted string found at line ${lineNumber + 1} within ${YTM}`));
+            console.error(c.bold.brightRed(`⚠ Unwanted string ${usc + 1} found at line ${lineNumber + 1} within ${YTM}`));
             let highlightedLine = line.replace(BROWSE, c.bold.brightYellow(BROWSE));
             highlightedLine = highlightedLine.replace(WWW, c.bold.brightYellow(WWW));
             highlightedLine = highlightedLine.replace(FS, c.bold.brightYellow(FS));
@@ -129,7 +128,7 @@ fs.readFile(YTM, 'utf8', (err, data) => {
                         replace(YT, YT, MTW, () => {
                             console.log('');
                             console.info(c.bold.brightCyan(`ℹ Process complete`));
-                            console.info(c.bold.brightCyan(`ℹ Number of unwanted strings found: ${usc}`));
+                            console.info(c.bold.brightCyan(`ℹ Total number of unwanted strings found: ${usc}`));
                             console.timeEnd(c.brightMagenta('Time taken'));
                         });
                     });
