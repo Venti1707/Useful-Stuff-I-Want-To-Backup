@@ -1,5 +1,3 @@
-# This code is a web scraper for
-
 import requests
 from bs4 import BeautifulSoup
 
