@@ -78,6 +78,10 @@
       </folder>
     </folder>
     <folder name="RegEx" />
+    <folder name="Balatro">
+      <keyword value="hlg" type="1" rich="0">=HYPERLINK("%|", "GitHub")</keyword>
+      <keyword value="hlw" type="1" rich="0">=HYPERLINK("%|", "Wiki")</keyword>
+    </folder>
   </folder>
   <folder name="">
     <keyword value="ycp" type="1" rich="0">Carl Maria von Weber - Piano Sonatas</keyword>
@@ -87,8 +91,6 @@
       <keyword value="p3" type="1" rich="0">Orchestra - </keyword>
     </folder>
     <keyword value="etup" type="1" rich="0">// javascript: (() =&gt; {{#crlf#}    if (window.location.href.includes("https://music.youtube.com/playlist?list=PL") || window.location.href.includes("browse/VL")) {{#crlf#}        console.log("Click anywhere in the page to copy the title, performer(s) &amp; URL ");{#crlf#}        document.addEventListener("click ", function () {{#crlf#}            var titleElement = document.querySelector(".title.style - scope.ytmusic - detail - header - renderer ");{#crlf#}            var performersElement = document.querySelector(".description.style - scope.ytmusic - detail - header - renderer ");{#crlf#}            var url = window.location.href.replace("browse/VL", "playlist?list=");{#crlf#}            if (titleElement) {{#crlf#}                var title = titleElement.textContent; var lineBreak = "\n";{#crlf#}                var performers = performersElement ? performersElement.textContent.replace(/\n/g, " | ") : "";{#crlf#}                var toCopy = title + (performers ? " (" + performers + ")" : "") + lineBreak + url + lineBreak + lineBreak;{#crlf#}                navigator.clipboard.writeText(toCopy).then(() =&gt; {{#crlf#}                    console.log("Title, performer(s) &amp; URL copied successfully");{#crlf#}                }).catch(err =&gt; {{#crlf#}                    console.warn("Could not copy text: ", err);{#crlf#}                });{#crlf#}            } else {{#crlf#}                console.error("Title, performer(s) &amp; URL not found.");{#crlf#}            }{#crlf#}        });{#crlf#}    } else if (window.location.href.includes("https://music.youtube.com/playlist?list=OL")) {{#crlf#}        console.error("In a YouTube Music album, not a playlist");{#crlf#}    } else {{#crlf#}        console.error("Not in a YouTube Music playlist");{#crlf#}    }{#crlf#}// })();</keyword>
-    <keyword value="uynym" type="1" rich="0">Update YouTube.txt &amp; YouTubeMusic.txt</keyword>
-    <keyword value="myt" type="1" rich="0">https://music.youtube.com/watch?v=</keyword>
     <keyword value="amc" type="1" rich="0">Apple Music imagesize:1200x1200 </keyword>
   </folder>
   <folder name="Others">
