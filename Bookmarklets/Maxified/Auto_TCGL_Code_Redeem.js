@@ -99,6 +99,7 @@ javascript: (async () => {
                     redeemButton.click();
                     await sleep(3000);
                     clearButton.click();
+                    await sleep(1500);
                 }
 
                 batchCount = 0;
