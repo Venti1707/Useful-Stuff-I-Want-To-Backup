@@ -2,8 +2,7 @@ javascript: (async () => {
     const redeemPage = "https://redeem.tcg.pokemon.com/en-us/";
 
     if (window.location.href !== redeemPage) {
-        console.error(`Please run this bookmarklet on the TCG Redeem page: ${redeemPage}`);
-        return;
+        window.location.assign(redeemPage);
     }
 
     const REGEX = /^[A-Z0-9]{3}.*[A-Z0-9]{4}.*[A-Z0-9]{3}.*[A-Z0-9]{3}$/;
@@ -47,8 +46,8 @@ javascript: (async () => {
         const start = Date.now();
 
         while (inputField.value.trim() !== "") {
-            if (Date.now() - start > 30000) {
-                console.error("Timed out waiting for input to clear");
+            if (Date.now() - start >= 15000) {
+                window.location.assign(redeemPage);
             }
             await sleep(100);
         }
