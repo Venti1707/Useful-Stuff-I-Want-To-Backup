@@ -96,6 +96,7 @@ javascript: (async () => {
                     console.log("Checking batch of 10");
                     await sleep(3000);
                     clearButton.click();
+                    await sleep(1500);
                 }
 
                 batchCount = 0;
